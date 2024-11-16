@@ -41,7 +41,6 @@ const Navbar = () => {
           </div>
         </div>
       </nav>
-      <h1 className="text-center mt-4 text-2xl">Welcome to the Home Page!</h1>
     </>
   );
 };
