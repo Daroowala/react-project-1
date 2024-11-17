@@ -6,6 +6,7 @@ import Home from './Components/Home';
 import Auth from './Components/Auth';
 import { auth } from './Firebase'; 
 import { onAuthStateChanged } from 'firebase/auth';
+import ProductDetails from './Components/ProductDetails';
 
 const App = () => {
   const [user, setUser] = useState(null); 
@@ -18,7 +19,8 @@ const App = () => {
       <Navbar />
       <Routes>
         <Route path="/signup" element={<Auth />} />
-        <Route path="/home" element={user ? <Home /> : <Navigate to="/signup" />} />        
+        <Route path="/home" element={user ? <Home /> : <Navigate to="/signup" />} />
+        <Route path="/product/:id" element={<ProductDetails />} />        
         <Route path="/" element={<Auth />} />
       </Routes>
     </Router>
