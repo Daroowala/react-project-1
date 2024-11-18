@@ -3,7 +3,7 @@ import React from 'react';
 import { useParams } from 'react-router-dom';
 
 const products = [
-  { id: 1, name: 'Product 1', description: 'This is product 1', image: '' },
+  { id: 1, name: 'Product 1', description: 'This is product 1', image: '/Big-C 1.png' },
   { id: 2, name: 'Product 2', description: 'This is product 2', image: 'https://via.placeholder.com/150' },
   { id: 3, name: 'Product 3', description: 'This is product 3', image: 'https://via.placeholder.com/150' },
   { id: 4, name: 'Product 4', description: 'This is product 4', image: 'https://via.placeholder.com/150' },
@@ -25,7 +25,7 @@ const ProductDetails = () => {
     <div className="p-6">
       {product ? (
         <div>
-          <img src={product.image} alt={product.name} className="w-full" />
+          <img src={product.image} alt={product.name} className="h-60 w-60" />
           <h1 className="text-3xl font-bold my-4">{product.name}</h1>
           <p className="text-lg">{product.description}</p>
         </div>
