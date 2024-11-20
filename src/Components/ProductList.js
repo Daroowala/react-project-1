@@ -11,7 +11,6 @@ const products = [
   { id: 6, name: 'MOVFLEX', image: '/Movflex Spray-04.png' },
   { id: 7, name: 'MULTINER', image: '/Multiner Drop-20.png' },
   { id: 8, name: 'SAVEKAL', image: '/Savekal Drop-20.png' },
-  { id: 9, name: 'CROSFA', image: '/Crosfa Sachet-38.png' },
 ];
 
 const ProductList = () => {

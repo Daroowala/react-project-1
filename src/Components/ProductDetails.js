@@ -11,7 +11,6 @@ const products = [
   { id: 6, name: 'Product 6', description: 'This is product 6', image: 'https://via.placeholder.com/150' },
   { id: 7, name: 'Product 7', description: 'This is product 7', image: 'https://via.placeholder.com/150' },
   { id: 8, name: 'Product 8', description: 'This is product 8', image: 'https://via.placeholder.com/150' },
-  { id: 9, name: 'Product 9', description: 'This is product 9', image: 'https://via.placeholder.com/150' },
 
 
   // Add more products as needed
