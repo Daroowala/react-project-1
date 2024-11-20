@@ -29,10 +29,10 @@ const Navbar = () => {
       <nav className="bg-gray-800 text-white p-4">
         <div className="flex justify-between items-center">
           <div className="flex space-x-16">
-          <Link to="/home" className={`hover:text-blue-400 ${!user ? 'pointer-events-none text-gray-500' : ''}`}>Home</Link>
-          <Link to="/shop" className={`hover:text-blue-400 ${!user ? 'pointer-events-none text-gray-500' : ''}`}>Shop</Link> 
-          <Link to="/about" className={`hover:text-blue-400 ${!user ? 'pointer-events-none text-gray-500' : ''}`}>About Us</Link> 
-          <Link to="/contact" className={`hover:text-blue-400 ${!user ? 'pointer-events-none text-gray-500' : ''}`}>Contact Us</Link>
+          <Link to="/home" className={`hover:text-blue-400 ${!user ? 'pointer-events-none text-gray-500' : ''}`}>HOME</Link>
+          <Link to="/shop" className={`hover:text-blue-400 ${!user ? 'pointer-events-none text-gray-500' : ''}`}>PRODUCTS</Link> 
+          <Link to="/about" className={`hover:text-blue-400 ${!user ? 'pointer-events-none text-gray-500' : ''}`}>ABOUT US</Link> 
+          <Link to="/contact" className={`hover:text-blue-400 ${!user ? 'pointer-events-none text-gray-500' : ''}`}>CONTACT US</Link>
           </div>
 
           <div>

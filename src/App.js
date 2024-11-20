@@ -7,6 +7,9 @@ import Auth from './Components/Auth';
 import { auth } from './Firebase'; 
 import { onAuthStateChanged } from 'firebase/auth';
 import ProductDetails from './Components/ProductDetails';
+import Banner from './Components/Banner';
+import Header from './Components/Header';
+import ProductList from './Components/ProductList';
 
 const App = () => {
   const [user, setUser] = useState(null); 
@@ -15,8 +18,11 @@ const App = () => {
     return () => unsubscribe(); 
   }, []);
   return (
+    <>
     <Router>
       <Navbar />
+      <Header />
+      <Banner />
       <Routes>
         <Route path="/signup" element={<Auth />} />
         <Route path="/home" element={user ? <Home /> : <Navigate to="/signup" />} />
@@ -24,6 +30,8 @@ const App = () => {
         <Route path="/" element={<Auth />} />
       </Routes>
     </Router>
+
+    </>
   );
 };
 
