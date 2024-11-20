@@ -9,6 +9,9 @@ import { onAuthStateChanged } from 'firebase/auth';
 import ProductDetails from './Components/ProductDetails';
 import Banner from './Components/Banner';
 import Header from './Components/Header';
+import Products from './Components/Pages/Products'; 
+import ContactUs from './Components/Pages/ContactUs'; 
+import AboutUs from './Components/Pages/AboutUs';
 import ProductList from './Components/ProductList';
 
 const App = () => {
@@ -26,7 +29,10 @@ const App = () => {
       <Routes>
         <Route path="/signup" element={<Auth />} />
         <Route path="/home" element={user ? <Home /> : <Navigate to="/signup" />} />
-        <Route path="/product/:id" element={<ProductDetails />} />        
+        <Route path="/product/:id" element={<ProductDetails />} />  
+        <Route path="/products" element={<Products />} /> 
+        <Route path="/contactus" element={<ContactUs />} /> 
+        <Route path="/aboutus" element={<AboutUs />} />      
         <Route path="/" element={<Auth />} />
       </Routes>
     </Router>

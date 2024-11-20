@@ -38,6 +38,7 @@ const Navbar = () => {
           <div>
           {user ? ( <button onClick={handleLogout} className="bg-red-500 hover:text-blue-400 hover:bg-red-600 p-2 rounded-md">Logout</button> ) 
           : ( <Link to="/signup" className="bg-green-500 hover:text-blue-400 hover:bg-green-600 p-2 rounded-md">Login</Link> )}
+          
           </div>
         </div>
       </nav>
