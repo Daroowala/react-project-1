@@ -14,6 +14,8 @@ import ContactUs from './Components/Pages/ContactUs';
 import AboutUs from './Components/Pages/AboutUs';
 import ProductList from './Components/ProductList';
 
+
+
 const App = () => {
   const [user, setUser] = useState(null); 
   useEffect(() => { const unsubscribe = onAuthStateChanged(auth, (currentUser) => { 
@@ -23,8 +25,9 @@ const App = () => {
   return (
     <>
     <Router>
-      <Navbar />
       <Header />
+      <Navbar />
+      <div className='pt-40'>
       <Banner />
       <Routes>
         <Route path="/signup" element={<Auth />} />
@@ -35,6 +38,7 @@ const App = () => {
         <Route path="/aboutus" element={<AboutUs />} />      
         <Route path="/" element={<Auth />} />
       </Routes>
+      </div>
     </Router>
 
     </>
