@@ -14,6 +14,7 @@ import ContactUs from './Components/Pages/ContactUs';
 import AboutUs from './Components/Pages/AboutUs';
 import ProductList from './Components/ProductList';
 import BannerBetween from './Components/BannerBetween';
+import SmallBanner from './Components/SmallBanner';
 
 
 const App = () => {
@@ -29,6 +30,9 @@ const App = () => {
       <BannerBetween />
       <Navbar />
       <Banner />
+      <div className="flex"> <SmallBanner image="/Bio Rest-05.jpg" altText="Small Banner 1" />
+      <SmallBanner image="/MovFlex-04 banar.jpg" altText="Small Banner 2" /> 
+      </div>
       <div className='pt-20'>
       <Routes>
         <Route path="/signup" element={<Auth />} />
