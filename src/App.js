@@ -13,7 +13,7 @@ import Products from './Components/Pages/Products';
 import ContactUs from './Components/Pages/ContactUs'; 
 import AboutUs from './Components/Pages/AboutUs';
 import ProductList from './Components/ProductList';
-
+import BannerBetween from './Components/BannerBetween';
 
 
 const App = () => {
@@ -26,9 +26,10 @@ const App = () => {
     <>
     <Router>
       <Header />
+      <BannerBetween />
       <Navbar />
-      <div className='pt-40'>
       <Banner />
+      <div className='pt-20'>
       <Routes>
         <Route path="/signup" element={<Auth />} />
         <Route path="/home" element={user ? <Home /> : <Navigate to="/signup" />} />

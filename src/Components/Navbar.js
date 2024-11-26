@@ -26,7 +26,7 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className="bg-gray-800 text-white p-4 fixed w-full top-20 z-40">
+      <nav className="bg-gray-800 text-white p-5  w-full top-64 z-30">
         <div className="flex justify-between items-center">
           <div className="flex space-x-16">
           <Link to="/home" className={`hover:text-blue-400 ${!user ? 'pointer-events-none text-gray-500' : ''}`}>HOME</Link>
