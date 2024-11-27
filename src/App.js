@@ -15,6 +15,7 @@ import AboutUs from './Components/Pages/AboutUs';
 import ProductList from './Components/ProductList';
 import BannerBetween from './Components/BannerBetween';
 import SmallBanner from './Components/SmallBanner';
+import CategoriesBar from './Components/CategoriesBar';
 
 
 const App = () => {
@@ -33,7 +34,8 @@ const App = () => {
       <div className="flex"> <SmallBanner image="/Bio Rest-05.jpg" altText="Small Banner 1" />
       <SmallBanner image="/MovFlex-04 banar.jpg" altText="Small Banner 2" /> 
       </div>
-      <div className='pt-20'>
+      <CategoriesBar />
+      <div className='pt-0'>
       <Routes>
         <Route path="/signup" element={<Auth />} />
         <Route path="/home" element={user ? <Home /> : <Navigate to="/signup" />} />
