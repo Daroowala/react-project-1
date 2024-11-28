@@ -36,3 +36,30 @@
     transform: rotate(360deg);
   }
 }
+
+/* Assuming you're using a CSS file or Tailwind for styling */
+.service-bar {
+  background-color: #f7fafc; /* Light gray background */
+  padding: 16px; /* Padding around the entire bar */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+}
+
+.service-item {
+  display: flex; /* Flexbox for alignment */
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Center align items */
+  gap: 8px; /* Space between items */
+}
+
+.service-icon {
+  font-size: 2rem; /* Larger icon size */
+}
+
+.service-title {
+  font-weight: bold; /* Bold title text */
+}
+
+.service-description {
+  text-align: center; /* Center-aligned description */
+}

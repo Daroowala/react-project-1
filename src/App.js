@@ -16,6 +16,7 @@ import ProductList from './Components/ProductList';
 import BannerBetween from './Components/BannerBetween';
 import SmallBanner from './Components/SmallBanner';
 import CategoriesBar from './Components/CategoriesBar';
+import ServiceBar from './Components/ServiceBar';
 
 
 const App = () => {
