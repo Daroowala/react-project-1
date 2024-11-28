@@ -6,6 +6,7 @@ import { auth } from '../Firebase';
 
 const Navbar = () => {
     const [user, setUser] = useState(null);
+    const [searchQuery, setSearchQuery] = useState('');
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -25,7 +26,9 @@ const Navbar = () => {
   };
 
   const handleSearch = (event) => {
-     event.preventDefault();};
+     event.preventDefault();
+     if (searchQuery.trim()) { navigate(`/search?query=${searchQuery}`); }
+    };
 
   return (
     <>
