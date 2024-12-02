@@ -17,8 +17,8 @@ import BannerBetween from './Components/BannerBetween';
 import SmallBanner from './Components/SmallBanner';
 import CategoriesBar from './Components/CategoriesBar';
 import WhatsAppIcon from './Components/WhatsAppIcon';
-import ServiceBar from './Components/ServiceBar';
 import SearchResults from './Components/SearchResults';
+
 
 
 const App = () => {
@@ -39,7 +39,6 @@ const App = () => {
       <SmallBanner image="/MovFlex-04 banar.jpg" altText="Small Banner 2" /> 
       </div>
       <CategoriesBar />
-      <ServiceBar />
       <div className='pt-0'>
       <Routes>
         <Route path="/signup" element={<Auth />} />
