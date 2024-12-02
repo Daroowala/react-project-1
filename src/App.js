@@ -18,7 +18,7 @@ import SmallBanner from './Components/SmallBanner';
 import CategoriesBar from './Components/CategoriesBar';
 import WhatsAppIcon from './Components/WhatsAppIcon';
 import SearchResults from './Components/SearchResults';
-
+import Footer from './Components/Footer';
 
 
 const App = () => {
@@ -53,6 +53,7 @@ const App = () => {
       </div>
       <WhatsAppIcon />
     </Router>
+    <Footer />
 
     </>
   );
