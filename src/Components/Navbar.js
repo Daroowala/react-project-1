@@ -26,8 +26,10 @@ const Navbar = () => {
   };
 
   const handleSearch = (event) => {
+    setSearchQuery(event.target.value);
      event.preventDefault();
-     if (searchQuery.trim()) { navigate(`/search?query=${searchQuery}`); }
+     if (searchQuery.trim()) 
+      { navigate(`/search?query=${searchQuery}`); }
     };
 
   return (

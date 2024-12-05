@@ -3,22 +3,7 @@ import React from 'react';
 const Footer = () => {
   return (
     <footer className="bg-gray-800 text-white p-5">
-      <div className="container mx-auto flex justify-center items-center">
-        <img src="/path/to/Logo.png" alt="Logo" className="h-20" />
-      </div>
-      <div className="container mx-auto flex flex-col items-center text-center text-white mt-4">
-        <p>Plot # 1315/2, Ground Floor, Near Suffah Masjid, Azizabad Block 8 Gulberg Town, Karachi, Karachi City, Sindh 75300</p>
-        <p>Cell No: 03458228119</p>
-        <p>© 2022 Skspharmaceuticals. All Rights Reserved.</p>
-      </div>
-      <div className="container mx-auto flex justify-center items-center mt-4">
-        <button 
-          className="bg-green-500 text-white p-2 rounded-md shadow-lg flex items-center" 
-          onClick={() => window.open('https://wa.me/03458228119', '_blank')}
-        >
-          <i className="fab fa-whatsapp h-6 w-6 mr-2"></i> Contact Us
-        </button>
-      </div>
+        <h1 className='flex justify-center font-bold text-4xl'>Our Manufacturers</h1><br /> <br />
       <div className="container mx-auto flex flex-col items-center text-center text-white mt-4">
         <div className="flex justify-around w-full">
           <div className="text-left">
@@ -74,6 +59,14 @@ const Footer = () => {
             <p>Certifications: FDA, IAF, ISO</p>
           </div>
         </div>
+        <div className="container mx-auto flex justify-center items-center">
+        <img src="/IMG-20241021-WA0008.jpg" alt="Logo" className="h-52 w-3/4" />
+      </div>
+      <div className="container mx-auto flex flex-col items-center text-center text-white mt-4">
+        <p>Plot # 1315/2, Ground Floor, Near Suffah Masjid, Azizabad Block 8 Gulberg Town, Karachi, Karachi City, Sindh 75300</p>
+        <p>Cell No: 03458228119</p>
+        <p>© 2022 Skspharmaceuticals. All Rights Reserved.</p>
+      </div>
       </div>
     </footer>
   );
