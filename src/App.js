@@ -19,6 +19,9 @@ import CategoriesBar from './Components/CategoriesBar';
 import WhatsAppIcon from './Components/WhatsAppIcon';
 import SearchResults from './Components/SearchResults';
 import Footer from './Components/Footer';
+import Wishlist from "./Components/Wishlist";
+import { WishlistProvider } from "./Components/WishlistContext";
+
 
 
 const App = () => {
@@ -29,6 +32,7 @@ const App = () => {
   }, []);
   return (
     <>
+            <WishlistProvider>
     <Router>
       <Header />
       <BannerBetween />
@@ -49,10 +53,13 @@ const App = () => {
         <Route path="/aboutus" element={<AboutUs />} />    
         <Route path="/search" element={<SearchResults />} />  
         <Route path="/" element={<Auth />} />
+        <Route path="/wishlist" element={<Wishlist />} />
       </Routes>
       </div>
       <WhatsAppIcon />
     </Router>
+    </WishlistProvider>
+
     <Footer />
 
     </>

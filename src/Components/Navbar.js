@@ -1,4 +1,3 @@
-// src/Components/Navbar.js
 import React, { useState, useEffect } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { signOut, onAuthStateChanged } from 'firebase/auth';
@@ -41,6 +40,7 @@ const Navbar = () => {
           <Link to="/shop" className={`hover:text-blue-400 ${!user ? 'pointer-events-none text-gray-500' : ''}`}>PRODUCTS</Link> 
           <Link to="/about" className={`hover:text-blue-400 ${!user ? 'pointer-events-none text-gray-500' : ''}`}>ABOUT US</Link> 
           <Link to="/contact" className={`hover:text-blue-400 ${!user ? 'pointer-events-none text-gray-500' : ''}`}>CONTACT US</Link>
+          <Link to="/wishlist">Wishlist</Link>
           </div>
 
           <form onSubmit={handleSearch} className="flex items-center"> 
