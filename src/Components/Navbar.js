@@ -40,7 +40,6 @@ const Navbar = () => {
           <Link to="/shop" className={`hover:text-blue-400 ${!user ? 'pointer-events-none text-gray-500' : ''}`}>PRODUCTS</Link> 
           <Link to="/about" className={`hover:text-blue-400 ${!user ? 'pointer-events-none text-gray-500' : ''}`}>ABOUT US</Link> 
           <Link to="/contact" className={`hover:text-blue-400 ${!user ? 'pointer-events-none text-gray-500' : ''}`}>CONTACT US</Link>
-          <Link to="/wishlist">Wishlist</Link>
           </div>
 
           <form onSubmit={handleSearch} className="flex items-center"> 
@@ -49,7 +48,12 @@ const Navbar = () => {
           </form>
 
           <div>
-          {user ? ( <button onClick={handleLogout} className="bg-red-500 hover:text-blue-400 hover:bg-red-600 p-2 rounded-md">Logout</button> ) 
+          {user ? ( 
+            <>
+          <span className="mr-4">Welcome, {user.email}</span>
+            <button onClick={handleLogout} className="bg-red-500 hover:text-blue-400 hover:bg-red-600 p-2 rounded-md">Logout</button> 
+            </> 
+            )
           : ( <Link to="/signup" className="bg-green-500 hover:text-blue-400 hover:bg-green-600 p-2 rounded-md">Login</Link> )}
           
           </div>
